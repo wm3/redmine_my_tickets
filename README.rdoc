@@ -1,3 +1,0 @@
-= my_ticket_macro
-
-Description goes here
