@@ -11,8 +11,8 @@ Redmine::Plugin.register :redmine_my_ticket_macro do
   Redmine::WikiFormatting::Macros.register do
 
     desc "List issues with descriptions.\n\n" +
-      "  !{{my_ticket(tracker=Defunct)}}\n" +
-      "  !{{my_ticket(tracker=Defunct, version=1.0 release)}}\n"
+      "  !{{my_ticket(tracker=Defect)}}\n" +
+      "  !{{my_ticket(tracker=Defect, version=1.0 release)}}\n"
 
     macro :my_ticket do |obj, args|
       args, options = extract_macro_options(args, :tracker, :version)
